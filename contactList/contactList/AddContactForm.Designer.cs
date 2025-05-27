@@ -36,14 +36,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox(); // Giữ txtemail từ local
+            this.label4 = new System.Windows.Forms.Label();    // Giữ label4 từ remote
             this.SuspendLayout();
             // 
             // txtHoten
             // 
             this.txtHoten.Location = new System.Drawing.Point(249, 112);
             this.txtHoten.Name = "txtHoten";
-            this.txtHoten.Size = new System.Drawing.Size(164, 22);
+            this.txtHoten.Size = new System.Drawing.Size(164, 22); // Kích thước hợp lý
             this.txtHoten.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -56,7 +57,7 @@
             // 
             this.txtSDT.Location = new System.Drawing.Point(249, 171);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(164, 22);
+            this.txtSDT.Size = new System.Drawing.Size(164, 22); // Kích thước hợp lý
             this.txtSDT.TabIndex = 2;
             // 
             // label1
@@ -79,7 +80,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(290, 279);
+            this.btnLuu.Location = new System.Drawing.Point(290, 316); // Vị trí từ remote
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 5;
@@ -89,7 +90,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(163, 229);
+            this.label3.Location = new System.Drawing.Point(175, 210); // Vị trí từ remote
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 16);
             this.label3.TabIndex = 6;
@@ -97,16 +98,26 @@
             // 
             // txtemail
             // 
-            this.txtemail.Location = new System.Drawing.Point(249, 229);
+            this.txtemail.Location = new System.Drawing.Point(249, 210); // Vị trí từ remote
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(164, 22);
+            this.txtemail.Size = new System.Drawing.Size(164, 22); // Kích thước hợp lý
             this.txtemail.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(111, 252); // Vị trí từ remote
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 16);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Thông tin bổ sung"; // Nội dung từ remote
             // 
             // AddContactForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLuu);
@@ -131,5 +142,6 @@
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtemail;
+        private System.Windows.Forms.Label label4;
     }
 }
