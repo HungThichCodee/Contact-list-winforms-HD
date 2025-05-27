@@ -35,13 +35,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtHoten
             // 
             this.txtHoten.Location = new System.Drawing.Point(249, 112);
             this.txtHoten.Name = "txtHoten";
-            this.txtHoten.Size = new System.Drawing.Size(100, 22);
+            this.txtHoten.Size = new System.Drawing.Size(164, 22);
             this.txtHoten.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -54,7 +56,7 @@
             // 
             this.txtSDT.Location = new System.Drawing.Point(249, 171);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(100, 22);
+            this.txtSDT.Size = new System.Drawing.Size(164, 22);
             this.txtSDT.TabIndex = 2;
             // 
             // label1
@@ -77,18 +79,36 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(286, 255);
+            this.btnLuu.Location = new System.Drawing.Point(290, 279);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 5;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(163, 229);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 16);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "email";
+            // 
+            // txtemail
+            // 
+            this.txtemail.Location = new System.Drawing.Point(249, 229);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(164, 22);
+            this.txtemail.TabIndex = 7;
+            // 
             // AddContactForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtemail);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -109,5 +129,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtemail;
     }
 }
